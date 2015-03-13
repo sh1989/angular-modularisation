@@ -5,11 +5,12 @@
     .module('my-app.featureone')
     .controller('FeatureOneController', FeatureOneController);
     
-    FeatureOneController.$inject = ['FruitDataService'];
+    FeatureOneController.$inject = ['FruitDataService', 'FeatureTwoService'];
     
-    function FeatureOneController(fruitDataService) {
+    function FeatureOneController(fruitDataService, featureTwoService) {
         var vm = this;
         vm.text = "Feature 1";
         vm.fruits = fruitDataService.getFruits();
+        vm.otherSource = featureTwoService.getFeatureName();
     }
 })();
