@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-    .module('my-app.featuretwo', ['my-app.core', 'my-app.components'])
+    .module('my-app.featuretwo', ['my-app.core', 'my-app.components', 'my-app.featureone'])
     .config(FeatureTwo);
     
     FeatureTwo.$inject = ['$routeProvider'];
