@@ -18,7 +18,7 @@ module.exports = function(grunt) {
         uglify: {
             js: {
                 options: {
-                    compress: true,
+                    compress: {},
                     mangle: true,
                     sourceMap: true
                 },
