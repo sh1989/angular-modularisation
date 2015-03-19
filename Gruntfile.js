@@ -27,7 +27,7 @@ module.exports = function(grunt) {
                     'app/common/components/**/*.js',
                     'app/featureOne/**/*.js',
                     'app/featureTwo/**/*.js',
-                    'app/app.js'
+                    'app/*.js'
                 ],
                 dest: 'public/js/app.min.js'
             }

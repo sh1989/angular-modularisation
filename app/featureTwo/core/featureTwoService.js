@@ -2,7 +2,7 @@
     'use strict';
     
     angular
-    .module('my-app.featuretwo')
+    .module('my-app.featuretwo.core')
     .factory('FeatureTwoService', FeatureTwoService);
     
     function FeatureTwoService() {

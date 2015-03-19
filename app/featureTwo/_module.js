@@ -2,16 +2,9 @@
     'use strict';
 
     angular
-    .module('my-app.featuretwo', ['my-app.core', 'my-app.components', 'my-app.featureone'])
+    .module('my-app.featuretwo', ['my-app.featuretwo.core', 'my-app.featureone.core', 'my-app.core', 'my-app.components'])
     .config(FeatureTwo);
     
-    FeatureTwo.$inject = ['$routeProvider'];
-    
-    function FeatureTwo($routeProvider) {
-        $routeProvider.when('/featuretwo', {
-            templateUrl: 'templates/featuretwo',
-            controller: 'FeatureTwoController',
-            controllerAs: 'vm'
-        });
+    function FeatureTwo() {
     }
 })();

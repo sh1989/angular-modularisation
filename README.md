@@ -3,6 +3,7 @@ Testing how you can break apart Angular modules on a "feature" level, but have c
 
 ## Prerequisites
 The application expects you to have:
+
 1. An installation of [Node.js](http://nodejs.org/)
 
 ## Setup
@@ -16,26 +17,27 @@ Execute `grunt` from the terminal to:
 * Starts the ExpressJS server
 * Watches for file changes. On a file change, the above process will be re-executed and the server re-started.
 
-You can view the application by visiting [http://localhost:3000](http://localhost:3000)
+You can view the application by visiting [http://localhost:3000](http://localhost:3000
 
 ## Directory Structure
 
     /
-    |- app/             -   Client-side resources, such as LESS and AngularJS code
+    |- app/                 Client-side resources, such as LESS and AngularJS code
         |- common/
-            |- core/        Contains reusable services
-            |- components/  Contains reusable components
+            |- core/        Contains reusable services and components
         |- featureOne/      An application feature ("vertical slice")
+            |- core/        Core layer for the feature, defining its API
         |- featureTwo/      Another application feature
+            |- core/        As above
         |- app.js           Application bootstrap
-    |- server/          -   Server-side resources
-    |- views/           -   JADE templates, served to the client by ExpressJS
-        |- templates/   -   Partial templates, i.e. for AngularJS directives
+    |- server/              Server-side resources
+    |- views/               JADE templates, served to the client by ExpressJS
+        |- templates/       Partial templates, i.e. for AngularJS directives
         |- index.jade
         |- layout.jade
     |- .gitignore
     |- Gruntfile.js
-    |- app.js           -   The ExpressJS server configuration file
+    |- app.js               The ExpressJS server configuration file
     |- package.json
     |- README.md
 

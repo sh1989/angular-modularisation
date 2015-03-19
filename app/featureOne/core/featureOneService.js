@@ -2,7 +2,7 @@
     'use strict';
     
     angular
-    .module('my-app.featureone')
+    .module('my-app.featureone.core')
     .factory('FeatureOneService', FeatureOneService);
     
     function FeatureOneService() {
