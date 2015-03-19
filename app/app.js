@@ -6,7 +6,6 @@
         'my-app.featureone.core',
         'my-app.featuretwo.core',
         'my-app.core',
-        'my-app.components',
         'my-app.featureone',
         'my-app.featuretwo'
         ])

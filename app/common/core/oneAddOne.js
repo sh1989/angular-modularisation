@@ -2,7 +2,7 @@
     'use strict';
     
     angular
-    .module('my-app.components')
+    .module('my-app.core')
     .directive('oneAddOne', OneAddOne);
     
     function OneAddOne() {
